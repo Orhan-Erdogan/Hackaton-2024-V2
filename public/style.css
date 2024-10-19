@@ -1,49 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+    line-height: 1.6;
 }
 
-.container {
-    max-width: 600px;
-    margin: auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+header {
+    background: #2C3E50;
+    color: white;
+    padding: 1rem;
     text-align: center;
 }
 
-input {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: #ECF0F1;
+    padding: 2rem;
+    text-align: center;
+}
+
+.cta-button {
+    background: #E74C3C;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.step {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+.price-comparison {
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin: 0.5rem 0;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
+    background: #3498DB;
     color: white;
+    padding: 0.5rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+.results {
+    margin-top: 2rem;
 }
 
-.benefits {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background: #f9f9f9;
+footer {
+    background: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

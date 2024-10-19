@@ -3,17 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insurance Benefits Finder</title>
+    <title>Prescription Cost Comparison</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Insurance Benefits Finder</h1>
-        <input type="text" id="insuranceInput" placeholder="Enter your insurance type...">
-        <button id="submitButton">Get Benefits</button>
-        <div id="benefitsDisplay" class="benefits"></div>
-    </div>
-    <script src="script.js"></script>
+    <header>
+        <div class="logo">MedPriceCompare</div>
+        <nav>
+            <ul>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Save on Your Medications</h1>
+            <p>Compare prices and find the best deals on your prescriptions.</p>
+            <a href="#price-comparison" class="cta-button">Get Started</a>
+        </section>
+
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>1. Enter Prescription</h3>
+                </div>
+                <div class="step">
+                    <h3>2. Provide Insurance Info</h3>
+                </div>
+                <div class="step">
+                    <h3>3. Compare Prices</h3>
+                </div>
+                <div class="step">
+                    <h3>4. Choose Best Option</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="price-comparison" class="price-comparison">
+            <h2>Price Comparison</h2>
+            <form>
+                <label for="prescription">Prescription Name:</label>
+                <input type="text" id="prescription" name="prescription" required>
+
+                <label for="dosage">Dosage:</label>
+                <input type="text" id="dosage" name="dosage" required>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+
+                <label for="insurance">Insurance Provider:</label>
+                <select id="insurance" name="insurance">
+                    <option value="insurance1">Insurance 1</option>
+                    <option value="insurance2">Insurance 2</option>
+                    <option value="insurance3">Insurance 3</option>
+                </select>
+
+                <button type="submit">Compare Prices</button>
+            </form>
+            <div class="results">
+                <h3>Results:</h3>
+                <p><strong>CVS Price:</strong> $<span id="cvs-price">XX.XX</span></p>
+                <p><strong>Cost Plus Drugs Price:</strong> $<span id="costplus-price">XX.XX</span></p>
+                <p><strong>Save: </strong><span id="savings">XX%</span></p>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <blockquote>"I saved so much on my prescriptions!" - Happy Customer</blockquote>
+        </section>
+
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>Our mission is to help you save money on your medications.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MedPriceCompare. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
